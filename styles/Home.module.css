@@ -1,0 +1,14 @@
+@tailwind components;
+
+@layer components {
+    .tabs {
+        @apply my-16;
+    }
+    .tabs ul {
+        @apply bg-white border-0 rounded-none shadow-none justify-around;
+    }
+    .tabs ul a {
+        @apply font-light uppercase text-gray-500;
+    }
+    
+}
