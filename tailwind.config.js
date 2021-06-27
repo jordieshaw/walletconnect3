@@ -52,7 +52,8 @@ module.exports = {
         yellow: colors.amber,
         lightgreen: "#1BAE8A21",
         blue:'#3B99FC',
-        darkblue:'#2A498D'
+        darkblue:'#2A498D',
+        turquoise:'#03B2BA',
       },
     },
   },
