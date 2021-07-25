@@ -51,7 +51,7 @@ module.exports = {
         seagreen: "#1BAE8A",
         yellow: colors.amber,
         lightgreen: "#1BAE8A21",
-        blue:'#3B99FC',
+        skyblue:'#3B99FC',
         darkblue:'#2A498D',
         turquoise:'#03B2BA',
       },

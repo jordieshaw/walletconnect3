@@ -1,14 +1,20 @@
 @tailwind components;
 
 @layer components {
-    .tabs {
-        @apply my-16;
+    .tabMenu {
+        @apply p-2 w-3/10 text-center;
     }
-    .tabs ul {
-        @apply bg-white border-0 rounded-none shadow-none justify-around;
+    .textarea {
+        @apply resize-none h-28 w-9/10 mx-auto py-2 px-5 focus:outline-none text-gray-700 font-light focus:ring-1 focus:ring-darkblue border border-darkblue rounded-xl;
     }
-    .tabs ul a {
-        @apply font-light uppercase text-gray-500;
+    .button {
+        @apply bg-darkblue w-9/10 mx-auto text-center my-5 rounded-lg text-white py-1.5;
     }
-    
+    .walletIcon {
+        @apply w-32 h-32 rounded-full !important;
+        min-width: none;
+        min-height:none;
+        max-width:none;
+        max-height:none;
+    }
 }

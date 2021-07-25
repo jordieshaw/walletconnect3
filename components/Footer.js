@@ -1,24 +1,23 @@
 import React from "react";
 import Image from 'next/image'
-import socials from '../src/images/socials.svg'
-
+import discord from '../src/images/discord.svg'
+import twitter from '../src/images/twitter.svg'
+import github from '../src/images/github.svg'
 function Footer() {
   return (
-    <div className="bg-darkblue px-5 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-x-5 tracking-wider py-4 text-white text-sm">
-      <div className="">
-        <div className="uppercase my-2">Contact us</div>
-        <div className='my-2'>
-            <Image src={socials} alt='' />
+    <div className="w-5/10 mx-auto p-20 text-xl text-gray-700 flex items-center capitalize justify-around">
+        <div className='flex items-center'>
+          <Image src={discord} alt=''/>
+          <div className='mx-2'>discord</div>
         </div>
-        <div className="text-turquoise my-2">
-          Copyright © 2021- WalletConnect. All rights reserved.
+        <div className='flex items-center'>
+          <Image src={twitter} alt='' />
+          <div className='mx-2'>twitter</div>
         </div>
-      </div>
-      <div className="flex items-end">
-        <div className="my-2">
-          Disclaimer | Terms of use | Copyright Notice | Privacy policy
+        <div className='flex items-center'>
+          <Image src={github} alt='' />
+          <div className='mx-2'>github</div>
         </div>
-      </div>
     </div>
   );
 }
