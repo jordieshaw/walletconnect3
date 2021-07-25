@@ -5,7 +5,7 @@ import Walletsect from "../components/Walletsect";
 
 export default function Home() {
   return (
-    <div className="tracking-wide font-extralight px-5 md:w-8/10 mx-auto">
+    <div className="tracking-wide font-light px-5 md:w-8/10 mx-auto">
       <div className="text-center text-gray-700">
         <div className="my-12">
           <h2 className="md:text-4xl font-bold my-7 tracking-wider">
@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <div className="grid p-3 gap-x-2 md:py-5 md:px-6 md:gap-x-6 md:grid-cols-2">
         <div className="mx-auto">
-          <h1 className="text-blue md:text-3xl my-2 mb-5">
+          <h1 className="text-blue font-medium md:text-3xl my-2 mb-5">
             What is WalletConnect?
           </h1>
           <p className="md:text-lg">
@@ -33,7 +33,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mx-auto">
-          <h1 className="text-blue md:text-3xl my-2 mb-5">
+          <h1 className="text-blue font-medium md:text-3xl my-2 mb-5">
             How does WalletConnect work?
           </h1>
           <p className="md:text-lg">

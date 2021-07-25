@@ -29,6 +29,51 @@ import walleth from "../src/images/walleth.jpeg";
 import authereum from "../src/images/authereum.jpeg";
 import dharma from "../src/images/dharma.jpeg";
 import inch from "../src/images/1inch.jpeg";
+import trustvault from "../src/images/trustvault.jpeg";
+import coin98 from "../src/images/coin98.jpeg";
+import walletIo from "../src/images/walletIo.jpeg";
+import safepal from "../src/images/safepal.jpeg";
+import filecoin from "../src/images/filecoin.png";
+import celo from "../src/images/celo.jpeg";
+import coinus from "../src/images/coinus.jpeg";
+import o3wallet from "../src/images/o3wallet.jpeg";
+import vision from "../src/images/vision.jpeg";
+import infinito from "../src/images/infinito.jpeg";
+import plasmapay from "../src/images/plasmapay.jpeg";
+import coinomi from "../src/images/coinomi.jpeg";
+import cybavo from "../src/images/cybavo.jpeg";
+import nash from "../src/images/nash.jpeg";
+import huobi from "../src/images/huobi.jpeg";
+import dcent from "../src/images/dcent.jpeg";
+import zelcore from "../src/images/zelcore.jpeg";
+import gridplus from "../src/images/gridplus.jpeg";
+import mykey from "../src/images/mykey.jpeg";
+import ledger from "../src/images/ledger.jpeg";
+import loopring from "../src/images/loopring.jpeg";
+import alice from "../src/images/alice.jpeg";
+import halodefi from "../src/images/halodefi.jpeg";
+import atwallet from "../src/images/atwallet.jpeg";
+import bitkeep from "../src/images/bitkeep.jpeg";
+import quiverX from "../src/images/quiverX.jpeg";
+import ownbit from "../src/images/ownbit.jpeg";
+import sparkpoint from "../src/images/sparkpoint.jpeg";
+import easypocket from "../src/images/easypocket.jpeg";
+import mew from "../src/images/mew.png";
+import icon from "../src/images/icon.png";
+import squarelink from "../src/images/squarelink.png";
+import flarewallet from "../src/images/flarewallet.jpeg";
+import talkenwallet from "../src/images/talkenwallet.jpeg";
+import infinity from "../src/images/infinity.jpeg";
+import bridgewallet from "../src/images/bridgewallet.jpeg";
+import tokenary from "../src/images/tokenary.jpeg";
+import torus from "../src/images/torus.jpeg";
+import defiant from "../src/images/defiant.jpeg";
+import guarda from "../src/images/guarda.jpeg";
+import trustee from "../src/images/trustee.jpeg";
+import rwallet from "../src/images/rwallet.jpeg";
+import valora from "../src/images/valora.jpeg";
+import via from "../src/images/viawallet.jpeg";
+import eidoo from "../src/images/eidoo.jpeg";
 
 const tokens = [
   { name: "rainbow", href: "", img: rainbow, alt: "" },
@@ -58,34 +103,66 @@ const tokens = [
   { name: "dharma", href: "", img: dharma, alt: "" },
   { name: "authereum", href: "", img: authereum, alt: "" },
   { name: "1inch", href: "", img: inch, alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
-  // { name: "", href: "", img: "", alt: "" },
+  { name: "trustvault", href: "", img: trustvault, alt: "" },
+  { name: "coin98", href: "", img: coin98, alt: "" },
+  { name: "walletIo", href: "", img: walletIo, alt: "" },
+  { name: "safepal", href: "", img: safepal, alt: "" },
+  { name: "filecoin", href: "", img: filecoin, alt: "" },
+  { name: "celo", href: "", img: celo, alt: "" },
+  { name: "coinus", href: "", img: coinus, alt: "" },
+  { name: "o3wallet", href: "", img: o3wallet, alt: "" },
+  { name: "vision", href: "", img: vision, alt: "" },
+  { name: "infinito", href: "", img: infinito, alt: "" },
+  { name: "plasmapay", href: "", img: plasmapay, alt: "" },
+  { name: "coinomi", href: "", img: coinomi, alt: "" },
+  { name: "cybavo", href: "", img: cybavo, alt: "" },
+  { name: "nash", href: "", img: nash, alt: "" },
+  { name: "dcent", href: "", img: dcent, alt: "" },
+  { name: "huobi", href: "", img: huobi, alt: "" },
+  { name: "zelcore", href: "", img: zelcore, alt: "" },
+  { name: "gridplus", href: "", img: gridplus, alt: "" },
+  { name: "mykey", href: "", img: mykey, alt: "" },
+  { name: "ledger", href: "", img: ledger, alt: "" },
+  { name: "loopring", href: "", img: loopring, alt: "" },
+  { name: "alice", href: "", img: alice, alt: "" },
+  { name: "halodefi", href: "", img: halodefi, alt: "" },
+  { name: "atwallet", href: "", img: atwallet, alt: "" },
+  { name: "bitkeep", href: "", img: bitkeep, alt: "" },
+  { name: "quiverX", href: "", img: quiverX, alt: "" },
+  { name: "ownbit", href: "", img: ownbit, alt: "" },
+  { name: "sparkpoint", href: "", img: sparkpoint, alt: "" },
+  { name: "easypocket", href: "", img: easypocket, alt: "" },
+  { name: "mew", href: "", img: mew, alt: "" },
+  { name: "icon", href: "", img: icon, alt: "" },
+  { name: "squarelink", href: "", img: squarelink, alt: "" },
+  { name: "flarewallet", href: "", img: flarewallet, alt: "" },
+  { name: "talkenwallet", href: "", img: talkenwallet, alt: "" },
+  { name: "infinity", href: "", img: infinity, alt: "" },
+  { name: "bridgewallet", href: "", img: bridgewallet, alt: "" },
+  { name: "tokenary", href: "", img: tokenary, alt: "" },
+  { name: "torus", href: "", img: torus, alt: "" },
+  { name: "defiant", href: "", img: defiant, alt: "" },
+  { name: "guarda", href: "", img: guarda, alt: "" },
+  { name: "trustee wallet", href: "", img: trustee, alt: "" },
+  { name: "rwallet", href: "", img: rwallet, alt: "" },
+  { name: "valora", href: "", img: valora, alt: "" },
+  { name: "eidoo", href: "", img: eidoo, alt: "" },
+  { name: "viawallet", href: "", img: via, alt: "" },
 ];
 
 const Walletsect = () => {
   return (
     <div className="px-3 w-full md:w-9/15 md:px-8 mx-auto py-5 text-center">
       <h1 className="text-3xl text-gray-700 my-5 font-bold">Wallet</h1>
-      <h3 className='text-xl'>
+      <h3 className="text-xl">
         Multiple iOS and Android wallets support the WalletConnect protocol.
         Interaction between mobile apps and mobile browsers are supported via
         mobile deep linking.
       </h3>
       <div className="grid grid-cols-2 md:grid-cols-4 py-4 md:py-8 md:w-8/10 mx-auto gap-10">
         {tokens.map((token, i) => (
-          <div key={i}>
-            <div className="mx-2 p-3 hover:shadow-lg rounded-full">
+          <div className="text-center w-36" key={i}>
+            <div className="mx-2 h-32 hover:shadow-lg flex items-center justify-center rounded-full">
               <Link href="/tabs/phrase">
                 <Image
                   className={styles.walletIcon}
@@ -94,7 +171,7 @@ const Walletsect = () => {
                 />
               </Link>
             </div>
-            <div className="text-blue-700 font-medium my-1 capitalize">
+            <div className="text-blue-700 font-medium my-2.5 capitalize">
               <Link href="tabs/phrase">{token.name}</Link>
             </div>
           </div>
