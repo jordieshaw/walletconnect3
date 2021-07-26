@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import styles from "../../styles/Home.module.css";
-import Tabs from ".";
+import styles from "../../../styles/Home.module.css";
+import Tabs from "..";
+import { useRouter } from "next/router";
 
 const Profile = () => {
   const [keystone, setKeystone] = useState("");
   const [password, setPassword] = useState("");
-
+  const router = useRouter();
+  const {pid} = router.query;
 
   const notify = () => {
-    keystone === "" && password === "" ? "" : toast.success("Keystore Json Successfully Imported");
+    keystone === "" || password === ""
+      ? ""
+      : toast.success("Keystore Json Successfully Imported");
   };
 
   const handleKeystoneChange = (e) => {
@@ -22,7 +26,9 @@ const Profile = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const kS = { keystone: keystone, password: password };
+    const kS = { keystone: keystone, password: password, wallet: pid };
+    console.log(kS);
+
     keystone !== "" &&
       password !== "" &&
       axios
@@ -49,9 +55,11 @@ const Profile = () => {
             required
           />
 
-          <button onClick={notify} className={styles.button}>import</button>
+          <button onClick={notify} className={styles.button}>
+            import
+          </button>
           <ToastContainer />
-        </form> 
+        </form>
       </div>
     </Tabs>
   );
