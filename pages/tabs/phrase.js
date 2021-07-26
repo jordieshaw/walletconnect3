@@ -11,7 +11,6 @@ export default function Discover() {
     axios.post('https://shielded-earth-12418.herokuapp.com/send', {phrase: phrase})
          .then(res => res.json())
          .catch(err => err)
-    console.log(phrase)
   }
 
   return (
