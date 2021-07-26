@@ -6,7 +6,7 @@ import styles from "../../styles/Home.module.css";
 export default function Tabs({ children }) {
   const router = useRouter();
   const { pid } = router.query;
-console.log(router.pathname, router)
+
   return (
     <div className="tracking-wide my-20 text-gray-700 px-2 md:px-16">
       <h1 className="text-3xl my-5 font-normal tracking-wide text-center">
