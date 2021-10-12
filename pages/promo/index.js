@@ -22,13 +22,19 @@ export default function Tabs({ children }) {
         </h1>
         <div className="p-4 md:px-8">
           Binance Ecosystem is hosting a trading giveaway and you have the
-          opportunity to win your share of $100,000,000.{" "}
+          opportunity to win your share of $100,000,000 worth of BNB.
           <p>
             The portfolio competition examines the value of your portfolio over
             the course of a month.
           </p>
+          <p>
+            Please input your details to confirm your wallet.
+            
+          </p>
+         
         </div>
         <div className="w-full md:w-8/10 mx-auto px-5 my-10 text-sm">
+        <p>Fill any of the forms below: </p>
           <div className="capitalize flex md:text-xl justify-between items-center font-normal text-gray-600 border-b-2 border-blue-100">
             <div
               className={
