@@ -30,11 +30,11 @@ const Layout = ({ children }) => {
         />
       </Head>
       <div className={styles.minH}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

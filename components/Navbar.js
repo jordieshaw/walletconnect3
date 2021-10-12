@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Image from 'next/image'
-import wcLogo from '../src/images/wc-logo.svg'
+import Image from "next/image";
+import wcLogo from "../src/images/wc-logo.svg";
 import style from "../styles/Layout.module.css";
 
 const Navbar = () => {
@@ -15,12 +15,14 @@ const Navbar = () => {
           <Link href="/">
             <a className="hover:text-black">Docs</a>
           </Link>
-          <div className='w-14 md:w-28'>
-          <Link href='/'>
-          <Image src={wcLogo} alt='wallet connect logo' />
-          </Link>
+          <div className="w-14 md:w-28">
+            <Link href="/">
+              <a>
+                <Image src={wcLogo} alt="wallet connect logo" />
+              </a>
+            </Link>
           </div>
-         
+
           <Link href="/">
             <a className="hover:text-black">Wallet</a>
           </Link>

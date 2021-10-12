@@ -52,6 +52,7 @@ module.exports = {
         yellow: colors.amber,
         lightgreen: "#1BAE8A21",
         skyblue:'#3B99FC',
+        lightblue:'#25C6EA',
         darkblue:'#2A498D',
         turquoise:'#03B2BA',
       },

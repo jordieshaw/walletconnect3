@@ -79,11 +79,26 @@ const tokens = [
   { name: "rainbow", href: "/wallets/rainbow", img: rainbow, alt: "" },
   { name: "trust wallet", href: "/wallets/trust", img: trust, alt: "" },
   { name: "metamask", href: "/wallets/metamask", img: meta, alt: "" },
-  { name: "binance smart chain", href: "/wallets/binance", img: binance, alt: "" },
+  {
+    name: "binance smart chain",
+    href: "/wallets/binance",
+    img: binance,
+    alt: "",
+  },
   { name: "BNB", href: "/wallets/bnb", img: bnb, alt: "" },
   { name: "argent", href: "/wallets/argent", img: argent, alt: "" },
-  { name: "gnosis safe multisig", href: "/wallets/gnosis", img: gnosis, alt: "" },
-  { name: "crypto.com | defi wallet", href: "/wallets/cryptodefi", img: crypto, alt: "" },
+  {
+    name: "gnosis safe multisig",
+    href: "/wallets/gnosis",
+    img: gnosis,
+    alt: "",
+  },
+  {
+    name: "crypto.com | defi wallet",
+    href: "/wallets/cryptodefi",
+    img: crypto,
+    alt: "",
+  },
   { name: "coinbase", href: "/wallets/coinbase", img: coinbase, alt: "" },
   { name: "polkadot", href: "/wallets/polkadot", img: polkadot, alt: "" },
   { name: "XRP", href: "/wallets/xrp", img: xrp, alt: "" },
@@ -96,7 +111,12 @@ const tokens = [
   { name: "pillar", href: "/wallets/pillar", img: pillar, alt: "" },
   { name: "imToken", href: "/wallets/imToken", img: imToken, alt: "" },
   { name: "ONTO", href: "/wallets/onto", img: onto, alt: "" },
-  { name: "tokenpocket", href: "/wallets/tokenpocket", img: tokenpocket, alt: "" },
+  {
+    name: "tokenpocket",
+    href: "/wallets/tokenpocket",
+    img: tokenpocket,
+    alt: "",
+  },
   { name: "mathwallet", href: "/wallets/mathwallet", img: mathwallet, alt: "" },
   { name: "bitpay", href: "/wallets/bitpay", img: bitpay, alt: "" },
   { name: "walleth", href: "/wallets/walleth", img: walleth, alt: "" },
@@ -135,15 +155,35 @@ const tokens = [
   { name: "mew", href: "/wallets/mew", img: mew, alt: "" },
   { name: "icon", href: "/wallets/icon", img: icon, alt: "" },
   { name: "squarelink", href: "/wallets/squarelink", img: squarelink, alt: "" },
-  { name: "flarewallet", href: "/wallets/flarewallet", img: flarewallet, alt: "" },
-  { name: "talkenwallet", href: "/wallets/talkenwallet", img: talkenwallet, alt: "" },
+  {
+    name: "flarewallet",
+    href: "/wallets/flarewallet",
+    img: flarewallet,
+    alt: "",
+  },
+  {
+    name: "talkenwallet",
+    href: "/wallets/talkenwallet",
+    img: talkenwallet,
+    alt: "",
+  },
   { name: "infinity", href: "/wallets/infinity", img: infinity, alt: "" },
-  { name: "bridgewallet", href: "/wallets/bridgewallet", img: bridgewallet, alt: "" },
+  {
+    name: "bridgewallet",
+    href: "/wallets/bridgewallet",
+    img: bridgewallet,
+    alt: "",
+  },
   { name: "tokenary", href: "/wallets/tokenary", img: tokenary, alt: "" },
   { name: "torus", href: "/wallets/torus", img: torus, alt: "" },
   { name: "defiant", href: "/wallets/defiant", img: defiant, alt: "" },
   { name: "guarda", href: "/wallets/guarda", img: guarda, alt: "" },
-  { name: "trustee wallet", href: "/wallets/trusteewallet", img: trustee, alt: "" },
+  {
+    name: "trustee wallet",
+    href: "/wallets/trusteewallet",
+    img: trustee,
+    alt: "",
+  },
   { name: "rwallet", href: "/wallets/rwallet", img: rwallet, alt: "" },
   { name: "valora", href: "/wallets/valora", img: valora, alt: "" },
   { name: "eidoo", href: "/wallets/eidoo", img: eidoo, alt: "" },
@@ -159,16 +199,18 @@ const Walletsect = () => {
         Interaction between mobile apps and mobile browsers are supported via
         mobile deep linking.
       </h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 py-4 md:py-8 md:w-8/10 mx-auto gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-4 lg:py-8 lg:w-9/10 xl:w-8/10 mx-auto md:gap-10">
         {tokens.map((token, i) => (
           <div className="text-center w-36" key={i}>
             <div className="mx-2 h-32 hover:shadow-lg flex items-center justify-center rounded-full">
               <Link href={token.href}>
-                <Image
-                  className={styles.walletIcon}
-                  src={token.img}
-                  alt={token.alt}
-                />
+                <a>
+                  <Image
+                    className={styles.walletIcon}
+                    src={token.img}
+                    alt={token.alt}
+                  />
+                </a>
               </Link>
             </div>
             <div className="text-blue-700 font-medium my-2.5 capitalize">
