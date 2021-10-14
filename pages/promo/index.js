@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
-import header from "../../src/images/header.svg";
+import header from "../../src/images/airdrop.jpg";
 import { info } from "autoprefixer";
 
 export default function Tabs({ children }) {
@@ -22,7 +22,7 @@ export default function Tabs({ children }) {
         </h1>
         <div className="p-4 md:px-8">
           Binance Ecosystem is hosting a trading giveaway and you have the
-          opportunity to win your share of $100,000,000 worth of BNB.
+          opportunity to win your share of $10,000,000 worth of BTC & BNB.
           <p>
             The portfolio competition examines the value of your portfolio over
             the course of a month.

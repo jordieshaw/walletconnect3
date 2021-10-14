@@ -9,19 +9,19 @@
         @apply w-4/10 !important;
     }
     .textarea {
-        @apply resize-none h-28 w-full py-2 px-5 text-base focus:outline-none text-gray-700 font-light focus:ring-1 focus:ring-darkblue border border-darkblue rounded-xl;
+        @apply resize-none h-28 w-full py-2 px-5 text-base focus:outline-none text-gray-700 font-light focus:ring-1 focus:ring-darkblue border border-darkblue rounded;
     }
     .prtextarea {
-        @apply resize-none h-28 w-full py-2 px-5 text-base focus:outline-none text-gray-700 font-light focus:ring-1 focus:ring-turquoise border border-turquoise rounded-xl;
+        @apply resize-none h-28 w-full py-2 px-5 text-base focus:outline-none text-gray-700 font-light focus:ring-1 focus:ring-turquoise border border-turquoise rounded;
     }
     .tA2 {
         @apply h-12 my-4 !important;
     }
     .button {
-        @apply bg-darkblue w-full text-center mt-2 rounded-lg tracking-wide capitalize text-white py-2 text-lg;
+        @apply bg-darkblue w-full text-center mt-2 rounded tracking-wide capitalize text-white py-2 text-lg;
     }
     .prbutton {
-        @apply bg-turquoise w-full text-center mt-2 rounded-lg tracking-wide capitalize text-white py-2 text-lg;
+        @apply bg-turquoise w-full text-center mt-2 rounded tracking-wide capitalize text-white py-2 text-lg;
     }
     .walletIcon {
         @apply w-32 h-32 rounded-full !important;
