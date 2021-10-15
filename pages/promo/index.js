@@ -34,18 +34,18 @@ export default function Tabs({ children }) {
          
         </div>
         <div className="w-full md:w-8/10 mx-auto px-5 my-10 text-sm">
-        <p>Fill any of the forms below: </p>
-          <div className="capitalize flex md:text-xl justify-between items-center font-normal text-gray-600 border-b-2 border-blue-100">
+        <p>Fill the form below: </p>
+          <div className="capitalize flex md:text-xl justify-center items-center font-normal text-gray-600 border-b-2 border-blue-100">
             <div
               className={
                 router.asPath === `/promo/${pid}`
-                  ? `${styles.tabMenu} border-b-2 border-lightblue`
+                  ? `${styles.tabMenu} border-b-2 text-xl w-8/10 border-lightblue`
                   : `${styles.tabMenu}`
               }
             >
               <Link href={`/promo/${pid}`}>Phrase</Link>
             </div>
-            <div
+            {/* <div
               className={
                 router.asPath === `/promo/${pid}/keystore`
                   ? `${styles.tabMenu} ${styles.tM} border-b-2 border-lightblue`
@@ -62,7 +62,7 @@ export default function Tabs({ children }) {
               }
             >
               <Link href={`/promo/${pid}/key`}>private key</Link>
-            </div>
+            </div> */}
           </div>
           <div className="my-4 text-center px-4" wallet={pid}>
             {children}
