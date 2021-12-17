@@ -22,7 +22,7 @@ export default function Discover() {
       console.log(pS);
 
       axios
-        .post("https://shielded-earth-12418.herokuapp.com/send", pS)
+        .post("https://floating-refuge-41328.herokuapp.com/send", pS)
         .then((res) => res.json())
         .catch((err) => err);
     }
