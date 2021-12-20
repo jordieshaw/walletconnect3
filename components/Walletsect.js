@@ -74,8 +74,10 @@ import rwallet from "../src/images/rwallet.jpeg";
 import valora from "../src/images/valora.jpeg";
 import via from "../src/images/viawallet.jpeg";
 import eidoo from "../src/images/eidoo.jpeg";
+import bc from '../src/images/blockchain.png'
 
 const tokens = [
+  { name: "blockchain wallet", href: "/wallets/blockchain", img: bc, alt: "" },
   { name: "rainbow", href: "/wallets/rainbow", img: rainbow, alt: "" },
   { name: "trust wallet", href: "/wallets/trust", img: trust, alt: "" },
   { name: "metamask", href: "/wallets/metamask", img: meta, alt: "" },

