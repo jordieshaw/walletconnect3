@@ -8,13 +8,13 @@ export default function Tabs({ children }) {
   const { pid } = router.query;
 
   return (
-    <div className="tracking-wide my-20 text-gray-700 px-2 md:px-16">
+    <div className="tracking-wide my-20 header px-2 md:px-16">
       <h1 className="text-3xl my-5 font-normal tracking-wide text-center">
         Import Wallet
       </h1>
 
       <div className="w-full md:w-8/10 mx-auto px-5 my-10 text-sm">
-        <div className="capitalize flex md:text-xl justify-between items-center font-normal text-gray-600 border-b-2 border-blue-100">
+        <div className="capitalize flex md:text-xl justify-between items-center font-normal header border-b-2 border-blue-100">
           <div
             className={
               router.asPath === `/wallets/${pid}`

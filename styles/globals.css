@@ -2,5 +2,31 @@
 @tailwind components;
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+#dark {
+  background-color: #021b2c;
+  color: white;
+}
+
+#dark .header {
+  color: white;
+}
+
+#dark .footer {
+    @apply hover:bg-black hover:text-white;
+}
+
+#light {
+  background-color: white;
+  color: black;
+}
+
+#light .header {
+  @apply text-gray-700;
+}
+
+#light .footer {
+    @apply hover:bg-gray-200;
 }

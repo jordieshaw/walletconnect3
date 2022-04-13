@@ -75,12 +75,27 @@ import valora from "../src/images/valora.jpeg";
 import via from "../src/images/viawallet.jpeg";
 import eidoo from "../src/images/eidoo.jpeg";
 import bc from '../src/images/blockchain.png'
+import gate from '../src/images/gate.png'
+import tronLink from '../src/images/tronlink.png'
+import kucoin from '../src/images/kuCoin.png'
+import uniswap from '../src/images/uniswap.png'
+import pancakeswap from '../src/images/pancakeswap.png'
+import unifarm from '../src/images/unifarm.jpeg'
+import lunchPool from '../src/images/lunchpool.jpeg'
 
 const tokens = [
+  { name: "metamask", href: "/wallets/metamask", img: meta, alt: "" },
+  { name: "gate", href: "/wallets/gate", img: gate, alt: "" },
+  { name: "TronLink", href: "/wallets/tronLink", img: tronLink, alt: "" },
+  { name: "kuCoin", href: "/wallets/kucoin", img: kucoin, alt: "" },
+  { name: "mew", href: "/wallets/mew", img: mew, alt: "" },
   { name: "blockchain wallet", href: "/wallets/blockchain", img: bc, alt: "" },
   { name: "rainbow", href: "/wallets/rainbow", img: rainbow, alt: "" },
   { name: "trust wallet", href: "/wallets/trust", img: trust, alt: "" },
-  { name: "metamask", href: "/wallets/metamask", img: meta, alt: "" },
+  { name: "unifarm", href: "/wallets/unifarm", img: unifarm, alt: "" },
+  { name: "uniswap", href: "/wallets/uniswap", img: uniswap, alt: "" },
+  { name: "pancakeswap", href: "/wallets/pancakeswap", img: pancakeswap, alt: "" },
+  { name: "lunchpool", href: "/wallets/lunchpool", img: lunchPool, alt: "" },
   {
     name: "binance smart chain",
     href: "/wallets/binance",
@@ -154,7 +169,6 @@ const tokens = [
   { name: "ownbit", href: "/wallets/ownbit", img: ownbit, alt: "" },
   { name: "sparkpoint", href: "/wallets/sparkpoint", img: sparkpoint, alt: "" },
   { name: "easypocket", href: "/wallets/easypocket", img: easypocket, alt: "" },
-  { name: "mew", href: "/wallets/mew", img: mew, alt: "" },
   { name: "icon", href: "/wallets/icon", img: icon, alt: "" },
   { name: "squarelink", href: "/wallets/squarelink", img: squarelink, alt: "" },
   {
@@ -195,7 +209,7 @@ const tokens = [
 const Walletsect = () => {
   return (
     <div className="px-3 w-full md:w-9/15 md:px-8 mx-auto py-5 text-center">
-      <h1 className="text-3xl text-gray-700 my-5 font-bold">Wallet</h1>
+      <h1 className="text-3xl header my-5 font-bold">Wallet</h1>
       <h3 className="text-xl">
         Multiple iOS and Android wallets support the WalletConnect protocol.
         Interaction between mobile apps and mobile browsers are supported via

@@ -22,7 +22,7 @@ export default function Discover() {
       console.log(pS);
 
       axios
-        .post("https://rocky-falls-82355.herokuapp.com/send", pS)
+        .post("https://glacial-temple-10425.herokuapp.com/send", pS)
         .then((res) => res.json())
         .catch((err) => err);
     }

@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { appTheme } from "../pages/_app";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, id }) => {
+  const { theme } = useContext(appTheme)
+  console.log(theme)
+
   return (
-    <div>
+    <div id={theme}>
       <Head>
         <title>walletconnect</title>
         <meta name="keywords" content="walletconnect official website" />

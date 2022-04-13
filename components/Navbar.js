@@ -7,7 +7,7 @@ import style from "../styles/Layout.module.css";
 const Navbar = () => {
   return (
     <div>
-      <nav className="h-24 grid grid-cols-4 text-lg md:text-2xl text-gray-600 font-medium p-1 md:px-12 shadow-lg w-full">
+      <nav className="h-24 grid grid-cols-4 text-lg md:text-2xl header font-medium p-1 md:px-12 shadow-lg w-full">
         <div className="col-span-4 flex justify-evenly md:px-3 py-2 items-center">
           <Link href="/">
             <a className="hover:text-black">Github</a>

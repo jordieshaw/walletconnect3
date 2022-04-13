@@ -6,7 +6,7 @@ import Walletsect from "../components/Walletsect";
 export default function Home() {
   return (
     <div className="tracking-wide font-light px-5 md:w-8/10 mx-auto">
-      <div className="text-center text-gray-700">
+      <div className="text-center header">
         <div className="my-12">
           <h2 className="md:text-4xl font-bold my-7 tracking-wider">
             WalletConnect
