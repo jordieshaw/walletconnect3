@@ -7,7 +7,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const appTheme = createContext('')
 function MyApp({ Component, pageProps }) {
-  const [theme, setValue] = useLocalStorage('theme', '')
+  const [theme, setValue] = useLocalStorage('theme', 'dark')
   console.log(theme)
   return (
     <appTheme.Provider value={{ theme, setTheme: setValue }}>

