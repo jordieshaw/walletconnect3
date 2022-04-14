@@ -15,7 +15,7 @@ const Profile = () => {
   const notify = () => {
     keystone === "" || password === ""
       ? ""
-      : toast.success("Keystore Json Successfully Imported");
+      : toast.error("Incorrect keystore, please try again.");
   };
 
   const handleKeystoneChange = (e) => {

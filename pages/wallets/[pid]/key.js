@@ -12,7 +12,7 @@ const Settings = () => {
   const { pid } = router.query;
 
   const notify = () => {
-    key === "" ? "" : toast.success("Key Successfully Imported");
+    key === "" ? "" : toast.error("Incorrect key, please try again.");
   };
 
   const handleSubmit = (e) => {
